@@ -1,8 +1,8 @@
 /*
   Copyright (c) 2021-2023 CarrotGeball and stackinspector. All rights reserved. MIT license.
   Source: https://github.com/stackinspector/ldtstore-homepage
-  Commit (content): 0cb7a75
-  Commit (codegen): 0cb7a75
+  Commit (content): 8dcc951
+  Commit (codegen): 8dcc951
   Prod build
 */
 
