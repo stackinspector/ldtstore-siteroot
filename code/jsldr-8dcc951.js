@@ -1,9 +1,0 @@
-/*
-  Copyright (c) 2021-2023 CarrotGeball and stackinspector. All rights reserved. MIT license.
-  Source: https://github.com/stackinspector/ldtstore-homepage
-  Commit (content): 8dcc951
-  Commit (codegen): 8dcc951
-  Prod build
-*/
-
-(()=>{var __async=(__this,__arguments,generator)=>new Promise((resolve,reject)=>{var fulfilled=value=>{try{step(generator.next(value))}catch(e){reject(e)}},rejected=value=>{try{step(generator.throw(value))}catch(e){reject(e)}},step=x=>x.done?resolve(x.value):Promise.resolve(x.value).then(fulfilled,rejected);step((generator=generator.apply(__this,__arguments)).next())});__async(void 0,null,function*(){document.body.innerText="loading";const boot_url=window.__BOOT__;delete window.__BOOT__;const boot_resp=yield fetch(boot_url);boot_resp.ok||(document.body.innerText="error");const boot=yield boot_resp.json();boot.lang!==null&&document.documentElement.setAttribute("lang",boot.lang),document.head.innerHTML=boot.head;for(const css of boot.minified_css){const el=document.createElement("style");el.textContent=css,document.head.appendChild(el)}for(const css of boot.css){const el=document.createElement("link");el.setAttribute("rel","stylesheet"),el.setAttribute("href",css.path),css.integrity!==void 0&&el.setAttribute("integrity",css.integrity),el.setAttribute("crossorigin","anonymous"),document.head.appendChild(el)}document.body.innerHTML=boot.body;for(const[key,data]of Object.entries(boot.includes))window[key]=data;for(const js of boot.minified_js){const el=document.createElement("script");el.textContent=js,document.body.appendChild(el)}for(const js of boot.js){const el=document.createElement("script");el.setAttribute("src",js.path),js.integrity!==void 0&&el.setAttribute("integrity",js.integrity),el.setAttribute("crossorigin","anonymous"),document.body.appendChild(el)}});})();
